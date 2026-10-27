@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Victoria's Journal</title>
+    <style>
+      
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: WhiteSmoke;
+            margin: 20px;
+            padding: 0;
+        }
+
+
+        #container {
+            background-color: PaleTurquoise; 
+            border: 4px double White;
+            padding: 20px;
+            max-width: 850px;
+            margin: 0 auto;
+            overflow: hidden; 
+        }
+
+        #main-header {
+            text-align: right;
+            color: Teal;
+            margin-bottom: 20px;
+        }
+
+        #main-header h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-size: 1rem;
+            margin: 5px 0 0 0;
+            color: DarkSlateGray;
+        }
+
+
+        #content-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+        #sidebar {
+            float: left;
+            width: 25%;
+            background-color: LightSeaGreen;
+            color: White;
+            padding: 15px;
+            margin-right: 3%;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        #sidebar h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px solid White;
+            padding-bottom: 5px;
+        }
+
+        #sidebar ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        #sidebar a {
+            color: White;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+
+      
+        #main-content {
+            float: left;
+            width: 72%;
+            box-sizing: border-box;
+        }
+
+
+        .journal-box {
+            background-color: White;
+            border: 2px solid Teal;
+            padding: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+       
+        .entry-text {
+            float: left;
+            width: 70%;
+            box-sizing: border-box;
+            padding-right: 10px;
+        }
+
+        .entry-date {
+            color: Teal;
+            margin-top: 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .entry-title {
+            text-decoration: dotted underline;
+        }
+
+        .entry-text p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: DimGray;
+            margin: 10px 0 0 0;
+        }
+
+      
+        .entry-image {
+            float: right;
+            width: 28%;
+            text-align: right;
+        }
+
+        .entry-image img {
+            max-width: 120px;
+            height: auto;
+            border: 1px solid LightGray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container to style the background texture/color -->
+    <div id="container">
+        
+        <!-- Header Section -->
+        <header id="main-header">
+            <h1>Victoria's Journal</h1>
+            <p class="subtitle">So fresh and so clean</p>
+        </header>
+
+        <div id="content-wrapper">
+            <!-- Sidebar / Friends Section -->
+            <aside id="sidebar">
+                <h2>Friends</h2>
+                <ul>
+                    <li><a href="#">Big Will</a></li>
+                    <li><a href="#">Conner</a></li>
+                    <li><a href="#">Michael</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Journal Entries Section -->
+            <main id="main-content">
+                
+                <!-- Entry 1: Spatulas -->
+                <article class="journal-box">
+                    <div class="entry-text">
+                        <h3 class="entry-date">04/09/08: <span class="entry-title">Spatulas</span></h3>
+                        <p>Yesterday, I went to the store and got some much needed spatulas! What better way to say I love myself than to buy myself a spatula?</p>
+                    </div>
+                    <div class="entry-image">
+                        <!-- Direct working image link for spatula -->
+                        <img src="https://unsplash.com" alt="Spatula">
+                    </div>
+                </article>
+
+                <!-- Entry 2: Cookie Cupcakes -->
+                <article class="journal-box">
+                    <div class="entry-text">
+                        <h3 class="entry-date">04/08/08: <span class="entry-title">Cookie Cupcakes</span></h3>
+                        <p>My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, "Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you." I wonder if the same applies for the cupcakes? If so, I don't think I can ever love ANYONE!</p>
+                    </div>
+                    <div class="entry-image">
+                        <!-- Direct working image link for cupcakes -->
+                        <img src="https://unsplash.com" alt="Cookie Cupcakes">
+                    </div>
+                </article>
+
+            </main>
+        </div>
+
+    </div>
+
+</body>
+</html>
